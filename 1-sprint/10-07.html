@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Редизайн UI-компонентов</title>
+</head>
+<body>
+
+    <!-- Верстка по БЭМ.
+Адаптивность: на мобильных — 1 колонка, на ПК — 3 колонки.
+Элементы: изображение, название, цена, кнопка «В корзину».
+Использовать CSS Grid/Flexbox. -->
+
+<div class="products container">
+    <acticle class="products__item card">
+     <div class="card__image">
+        <img src="https://miska.ru/upload/resize_cache/iblock/fdf/585_410_1/fdf83fd49d8670f9c2d839b066aa3123.jpg"  width="100%" height="100%" alt="cat">
+      </div>
+      <h3 class="card__title">Заголовок</h3>
+      <div class="content">
+      <p class="content__desc">Адаптивность: на мобильных — 1 колонка, на ПК — 3 колонки.
+  Элементы: изображение, название, цена, кнопка «В корзину».
+  Использовать CSS Grid/Flexbox.Адаптивность: на мобильных — 1 колонка, на ПК — 3 колонки.
+  Элементы: изображение, название, цена, кнопка «В корзину».
+  Использовать CSS Grid/Flexbox.Адаптивность: на мобильных — 1 колонка, на ПК — 3 колонки.
+  Элементы: изображение, название, цена, кнопка «В корзину».
+  Использовать CSS Grid/Flexbox.Адаптивность: на мобильных — 1 колонка, на ПК — 3 колонки.
+  Элементы: изображение, название, цена, кнопка «В корзину».
+  Использовать CSS Grid/Flexbox.Адаптивность: на мобильных — 1 колонка, на ПК — 3 колонки.
+  Элементы: изображение, название, цена, кнопка «В корзину».
+  Использовать CSS Grid/Flexbox.Адаптивность: на мобильных — 1 колонка, на ПК — 3 колонки.
+  Элементы: изображение, название, цена, кнопка «В корзину».
+  Использовать CSS Grid/Flexbox.</p>
+      <span class="content__price">1000</span>
+        </div>
+      <button class="card__button" aria-label="Добавить в корзину">В корзину</button>
+    </acticle>
+    <acticle class="products__item card">
+      <div class="card__image">
+        <img src="https://ic.pics.livejournal.com/o_jivotnih/96279421/61886/61886_original.jpg"  width="100%" height="100%" alt="cat">
+      </div>
+       <div class="content">
+        <h3 class="content__title">Заголовок Заголовок Заголовок Заголовок Заголовок Заголовок</h3>
+        <span class="content__price">1000</span>
+       </div>
+      <button class="card__button" aria-label="Добавить в корзину">В корзину</button>
+    </acticle>
+    <acticle class="products__item card">
+      <div class="card__image">
+        <img src="https://ic.pics.livejournal.com/o_jivotnih/96279421/61886/61886_original.jpg"  width="100%" height="100%" alt="cat">
+      </div>
+       <div class="content">
+        <h3 class="content__title">Заголовок</h3>
+        <span class="content__price">1000</span>
+      </div>
+      <button class="card__button" aria-label="Добавить в корзину">В корзину</button>
+    </acticle>
+    <acticle class="products__item card">
+      <div class="card__image">
+        <img src="https://ic.pics.livejournal.com/o_jivotnih/96279421/61886/61886_original.jpg"  width="100%" height="100%" alt="cat">
+      </div>
+        <h3 class="card__title">Заголовок</h3>
+        <div class="content">
+        <span class="content__price">1000</span>
+      </div>
+      <button class="card__button" aria-label="Добавить в корзину">В корзину</button>
+    </acticle>
+  </div>
+  
+<script src="script.js"></script>
+</body>
+</html>
