@@ -95,6 +95,7 @@
     cursor: pointer;
     min-width: -webkit-fill-available;
   }
+  .content__star
   
   .card__button:hover {
     opacity: 0.5;
@@ -102,6 +103,11 @@
   
   .card__button-like {
     background: #FFB6C1;
+  }
+  
+  .content__price {
+    font-size: 1.2em;
+    font-weight: bold;
   }
   
   

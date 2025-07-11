@@ -1,0 +1,11 @@
+{
+  "tagname-lowercase": true,    // Теги в нижнем регистре
+  "attr-lowercase": true,       // Атрибуты в нижнем регистре
+  "attr-value-double-quotes": true, // Кавычки только двойные
+  "id-unique": true,            // Уникальные ID
+  "src-not-empty": true,        // Пустые src запрещены
+  "alt-required": true,         // Обязательный alt для img
+  "doctype-first": true,        // Doctype в начале файла
+  "indentation": 2,             // Отступ 2 пробела
+  "tag-pair": true              // Закрытие всех тегов
+}
