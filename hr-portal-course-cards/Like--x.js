@@ -1,3 +1,4 @@
+//------------------------------------- ДОБАВЛЕНИЕ ЛАЙКА
 let btns = document.querySelectorAll('.card__button')
 
 let likeCounter = [...btns] // нод узлы сначала превращаем в массив
@@ -9,11 +10,9 @@ likeCounter.forEach((btn) => {
 
 let likeBtn = result[0]
 
-console.log(likeBtn)
-// добавление лайка
+
 likeBtn.addEventListener('click', () => {
   likeBtn.classList.toggle('card__button-like')
   console.log(likeBtn)
 })
-
-// console.log(check)
+//------------------------------------- ДОБАВЛЕНИЕ ЛАЙКА

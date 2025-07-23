@@ -1,0 +1,55 @@
+
+.popup {
+    background: #3bf8e8;
+    width: clamp(100px, 50%, 500px);
+    color: black;
+    border: none;
+    display: flex;
+    justify-content: center;
+    border-radius: 16px;
+    padding: 16px;
+    
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    // transform: translate(-50%, -50%);
+    
+    margin: 0;
+    z-index: 10;
+
+    display: none;
+
+    transition: none;
+
+    &::backdrop {
+      background: black;
+      opacity: 0.9;
+    }
+    &__content {
+      max-width: fit-content;
+      width: 100%;
+
+      transform: scale(0.95)
+    }
+    &__close {
+      background-color: #ccc;
+      border-radius: 50%;
+      max-height: fit-content;
+      min-width: 30px;
+      max-width: 30px;
+      
+      aspect-ratio: 1/1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &__close:hover {
+      cursor: pointer;
+    }
+    &--active {
+        display: flex;
+    }
+    &--disabled {
+        display: none;
+    }
+  }
