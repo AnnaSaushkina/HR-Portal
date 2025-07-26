@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Удаление/добавление таргетированного элемента в список</title>
+</head>
+<body>
+    <div id="container">
+        <button data-action="add">💾 Добавить</button>
+        <button data-action="delete">❌ Удалить</button>
+      </div>
+      
+      <table id="products-table" border="1" style="width: 100%;">
+        <thead>
+          <tr>
+            <th>Товар</th>
+            <th>Действие</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Товар 1</td>
+            <td><button class="delete-btn" data-id="1">❌ Удалить</button></td>
+          </tr>
+          <tr>
+            <td>Товар 2</td>
+            <td><button class="delete-btn" data-id="2">❌ Удалить</button></td>
+          </tr>
+          <tr>
+            <td>Товар 3</td>
+            <td><button class="delete-btn" data-id="3">❌ Удалить</button></td>
+          </tr>
+          <tr>
+            <td>Товар 4</td>
+            <td><button class="delete-btn" data-id="4">❌Удалить</button></td>
+          </tr>
+          <tr>
+            <td>Товар 5</td>
+            <td><button class="delete-btn" data-id="5">❌ Удалить</button></td>
+          </tr>
+        </tbody>
+      </table><!-- HTML (готовая разметка) -->
+      <table id="users-table" border="1" style="width: 100%;">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Имя</th>
+            <th>Email</th>
+            <th>Действия</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-id="1">
+            <td>1</td>
+            <td>Анна</td>
+            <td>anna@example.com</td>
+            <td><button class="delete-btn">❌ Удалить</button></td>
+          </tr>
+          <tr data-id="2">
+            <td>2</td>
+            <td>Иван</td>
+            <td>ivan@example.com</td>
+            <td><button class="delete-btn">❌ Удалить</button></td>
+          </tr>
+          <!-- Еще 98 строк -->
+        </tbody>
+      </table>
+      <script src="script.js"></script>
+</body>
+</html>
