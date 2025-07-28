@@ -1,0 +1,206 @@
+/* --------------------------1 задача: колонки автоматически подстраиваются под ширину экрана */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .product {
+    background-color: #ccc;
+  }
+  
+  .mt40 {
+    margin-top: 40px;
+  }
+  
+  /* --------------------------2 задача: Выровнять контент внутри грид-ячеек по центру */
+  
+  .centered-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    place-items: center;
+  }
+  .item {
+     min-height: 200px;
+    width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .centered-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  
+  /* 🔹 3. Сложная сетка с `grid-template-areas`*/
+  .layout {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+      'header header'
+      'aside main'
+      'footer footer';
+    grid-template-columns: 20% 1fr;
+    min-height: 100vh;
+  }
+  
+  @media (max-width: 768px) {
+    .layout {
+       grid-template-areas: 
+      'header'
+      'aside'
+      'main'
+      'footer';
+     grid-template-columns: 1fr;
+    }
+  }
+  
+  header {
+    grid-area: header;
+  }
+  
+  aside {
+    grid-area: aside;
+  }
+  
+  main {
+    grid-area: main;
+  }
+  
+  footer {
+    grid-area: footer;
+  }
+  
+  
+  /* 🔹 5. Комбинированная задача: Карточка товара с Grid */
+  .product-card {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 5px;
+  }
+  
+   .product-card img {
+    width: 100%;
+     height: auto;
+  }
+  
+  .info {
+    background-color: green;
+    display: grid;
+    padding: 15px;
+    grid-template-rows: auto auto 1fr auto;
+  } 
+  
+  @media (max-width: 768px) {
+    .product-card {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+
+
+
+  /* 🧩 Задача 1: */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    justify-items: center;
+    grid-gap: 15px;
+    grid-template-rows: repeat(3, 100px);
+  }
+  .product {
+    background-color: #ccc;
+    width: 100%;
+  }
+  
+  /* 🎯 Задача 2: */
+  .centered-grid {
+     display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: clamp(5px, 10px, 15px);
+    place-items: center;
+  }
+  @media (min-width: 768px) {
+    .centered-grid {
+    grid-template-columns: repeat(4, minmax(200px, 2fr));
+      }
+  }
+  
+  .item {
+    background-color: green;
+    min-width: 100%;
+    height: 100px;
+  }
+  
+  /* 🏗️ Задача 3: Макет с grid-template-areas */
+    .task3 {
+    display: grid;
+    grid-template-areas: 
+      "header"
+      "content"
+      "sidebar"
+      "footer";
+    grid-template-columns: auto;
+      place-items: center;
+  }
+  
+  .task3 > * {
+    width: 100%;
+  }
+  
+  @media (min-width: 768px) {
+    .task3 {
+      grid-template-areas: 
+      "header header"
+      "sidebar content"
+      "footer footer";
+       grid-template-columns: 250px auto;
+       margin-top: 40px;
+    }
+  }
+  
+  .header {
+    grid-area: header;
+    background-color: yellow;
+  }
+  
+  .sidebar {
+    grid-area: sidebar;
+    background-color: #f4ddd3;
+  }
+  .content {
+    grid-area: content;
+    background-color: #f42dd3;
+  }
+  .footer {
+    grid-area: footer;
+    background-color: #f42d33;
+  }
+  
+  
+  /* 🧱 Задача 4: Распределение пространства */
+  .spacing-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr; /* 3 колонки: первая в 2 раза шире */
+    grid-gap: 10px;
+    margin-top: 40px;
+  }
+  
+  .wide {
+    grid-column: span 2; /* Занимает 2 колонки */
+    background-color: #ffcc80;
+  }
+  
+  .full {
+    grid-column: 1 / -1; /* Занимает все колонки */
+    background-color: #a5d6a7;
+  }
+  
+  .spacing-grid .item {
+    background-color: #fdddf0;
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  
