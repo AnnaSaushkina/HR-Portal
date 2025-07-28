@@ -1,0 +1,100 @@
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    position: relative;
+  }
+  /* ### **Задача 1: Relative + Absolute (Бейдж на аватарке)**
+  **Цель:** Понять связь `relative` и `absolute` для позиционирования внутри родителя.  
+  **Практическая польза:** Иконки уведомлений, статусы пользователей.  
+  **Задача:**  
+  - Создайте `div` (аватар) с `position: relative` и фоном.  
+  - Внутри добавьте маленький кружок (бейдж) с `position: absolute`.  
+  - Разместите бейдж в **правом нижнем углу** аватарки.   */
+  .avatar {
+    background-color: #ccc;
+    padding: 16px;
+    border-radius: 16px;
+    position: relative;
+    max-width: 33%;
+    margin: 0 auto;
+    min-height: 100px;
+  }
+  
+  .avatar__badge {
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    width: 50px;
+    height: 50px;
+    max-width: 100%;
+    max-height: 100%;
+   
+    aspect-ratio: 1 / 1;
+  }
+  
+  
+  /* ### **Задача 2: Fixed (Фиксированная кнопка "Наверх")**
+  **Цель:** Закрепить элемент относительно окна браузера.  
+  **Практическая польза:** Кнопки действий, чат-боты, fixed-меню.  
+  **Задача:**  
+  - Создайте кнопку "↑" в нижнем правом углу экрана.  
+  - При прокрутке страницы она должна оставаться на месте.   */
+  
+  .fixed__btn {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  /* 
+  ### **Задача 3: Sticky (Прилипающий заголовок таблицы)**
+  **Цель:** Научиться использовать гибридное позиционирование.  
+  **Практическая польза:** Заголовки таблиц, sticky-шапки.  
+  **Задача:**  
+  - Создайте таблицу с высотой больше высоты экрана.  
+  - Зафиксируйте заголовок таблицы (`<thead>`) при прокрутке.   */
+  .sticky-table {
+    background-color: #F90596;
+     height: 110vh;
+  }
+  .sticky-table thead {
+    background-color: #3cc;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  /* Задача 4: */
+  .nav {
+    position: relative;
+    top: 0;
+    right: 0;
+    display: flex;
+  }
+  
+  .nav ul {
+    position: absolute;
+  }
+  
+  
+  .nav ul {
+    padding-left: 0;
+    opacity: 0;
+    padding-left: 0;
+    margin: 0;
+    transition: opacity 1s ease;
+    top: 100%;
+    pointer-events: none;
+  }
+  
+  .nav:hover ul {
+    opacity: 1;
+  }
+  
+  

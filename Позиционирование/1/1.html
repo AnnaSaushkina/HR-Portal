@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="1.css">
+    <title>Позиционирование
+    </title>
+</head>
+<body>
+    <!-- **Задача 1: -->
+<div class="container">
+    <div class="avatar ">
+      <img class="avatar__badge" src="https://madcats.ru/wp-content/uploads/2018/08/8586A23F-E3F0-4C40-98F7-2117F097AD39.jpeg" width="50" height="50">
+    </div>
+  </div>
+  <!-- **Задача 2: Fixed -->
+  <button class="fixed__btn">↑</button>
+  
+    <!-- Задача 3: Sticky -->
+  <table class="sticky-table">
+    <thead>
+      <tr>
+         <td>Заголовок таблицы</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Я устал</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <!-- ### **Задача 4: Absolute + Overflow (Выпадающее меню)**
+  **Цель:** Управлять вложенными элементами с `absolute`.  
+  **Практическая польза:** Выпадающие списки, контекстные меню.  
+  **Задача:**  
+  - Создайте кнопку "Меню".  
+  - При наведении показывайте блок с `position: absolute` под кнопкой.  
+  - Родительскому контейнеру задайте `position: relative`.   -->
+   <nav class="nav">
+    <button>Меню</button>
+     <ul>
+       <li>Какой-то контент выпадающий</li>
+     </ul>
+  </nav>
+  
+
+</body>
+</html>

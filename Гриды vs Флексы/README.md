@@ -1,6 +1,6 @@
 ## Гриды vs Флексы
 
-#### - [Код](./style.js)
+#### - [Код](./style.css)
 #### - [Пример 1](https://cdpn.io/pen/debug/OPyRQMw?authentication_hash=yYryLeGRRZbM)
 #### - [Пример 2](https://cdpn.io/pen/debug/MYajoVO?authentication_hash=LDMmdWazzvZk)
 
